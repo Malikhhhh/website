@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ninety-nine cans of pineapple</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+
+    h1 {
+      font-size: 3.5vw;
+    }
+
+    #song>p {
+      text-align: center;
+      font-size: 2.5vw;
+    }
+
+    #song>p:hover {
+      font-weight: bold;
+    }
+
+    i:hover {
+      font-size: 20vw
+    }
+  </style>
+  <script>
+    function init() {
+      var loc = window.location.href;
+      var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+      var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+        loc + '?profile=css3';
+      document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+      document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+    }
+
+    window.onload = init;
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Ninety-nine cans of pineapple jucie</h1>
+  </header>
+  <main id="song">
+
+  </main>
+ <p>
+ <ul>
+<li> To declare a variable in Javascript, use "var" and then the name of the variable after it along with what it will be assigned to, ex. var cheese = "cake". </li>
+<li> The python equivalent of a colon (:), to Javascript are brackets ({}) you use a open bracket to start the indentation and a closed bracket to end it. </li>
+<li> A while loop in Javascript looks like this: while (cans > 0) { </li>
+ </ul>
+ </p>
+  <footer>
+    <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+    <a id="vLink2"><strong> CSS </strong> Valid! </a>
+  </footer>
+  <script>
+    let drink = "pineapple Juice";
+    let lyrics = "";
+    let Cans = 99;
+
+    while (Cans > 1) {
+      lyrics += "<p>";
+      lyrics += Cans + " Cans of " + drink + " on the wall <br>";
+      lyrics += Cans + " Cans of " + drink + " on the wall <br>";
+      lyrics += "Take one down, pass it around,";
+      lyrics += "</p>";
+      Cans--;
+    }
+    lyrics += "<p>";
+    lyrics += Cans + " Vase of " + drink + " on the wall <br>";
+    lyrics += Cans + " Vase of " + drink + " on the wall <br>";
+    lyrics += "Take one down, pass it around, no more Cans of ";
+    lyrics += drink + " on the wall :-(";
+    lyrics += "</p>";
+
+    document.getElementById("song").innerHTML = lyrics;
+  </script>
+  <script type='text/javascript'
+    src="https:////jelkner.github.io/4c3900f8e9dd69b5714c214642cf1a280bd60a97b72770c05502ed560d248b20/inject.js"></script>
+
+</body>
+
+</html>
