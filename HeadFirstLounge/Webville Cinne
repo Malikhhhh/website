@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head> 
+        <meta charset="utf-8">
+        <title></title>
+    <style>
+        h1, footer {
+            text-align: center;
+        }
+        footer>a, footer>a:visited {
+            text-decoration: none;
+            color: #555;
+        }
+    </style>
+    </head>
+    <body> 
+        <h1>Webville Cinema</h1>
+        <table id = "MovieTable">
+            <tr><th>Movies</th> <th>Next Showing</th></tr>
+            
+        </table>
+        
+        <footer>
+            <a id="vLink1" href="http://validator.w3.org/check?uri=https://johan-franco.github.io/website/javascript/index.htm"><strong> HTML </strong> Valid! </a> |
+            <a id="vLink2" href="http://jigsaw.w3.org/css-validator/validator?uri=https://johan-franco.github.io/website/javascript/index.htm"><strong> CSS </strong> Valid! </a>
+        </footer>
+    </body>
+    <script src="cinema.js"></script>
+    <a href = "/website/index.html">Return to Main Page</a>
+</html>
