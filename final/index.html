@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0 0 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+audio {
+    display: none;
+}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Legends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Legends</h1>
+        <p>Celebrating the work of Lauryn Hill, Kendrick Lamar, and XXXTentacion</p>
+    </header>
+
+    <section id="lauryn-hill">
+        <h2>Lauryn Hill</h2>
+        <img src="images/lauryn_hill.jpg" alt="Lauryn Hill">
+        <h3>Top Albums</h3>
+        <ol>
+            <li><b>The Miseducation of Lauryn Hill</b> - A seminal album in hip hop and R&B.</li>
+            <li><b>MTV Unplugged No. 2.0</b> - A raw and emotional live performance.</li>
+            <li><b>Collaborations</b> - Featuring works with The Fugees and other artists.</li>
+        </ol>
+    </section>
+
+    <section id="kendrick-lamar">
+        <h2>Kendrick Lamar</h2>
+        <img src="images/kendrick_lamar.jpg" alt="Kendrick Lamar">
+        <h3>Top Albums</h3>
+        <ol>
+            <li><b>DAMN.</b> - An exploration of personal and societal issues.</li>
+            <li><b>To Pimp a Butterfly</b> - A fusion of jazz, funk, and hip hop with deep themes.</li>
+            <li><b>good kid, m.A.A.d city</b> - A narrative-driven album about his upbringing.</li>
+        </ol>
+    </section>
+
+    <section id="xxxtentacion">
+        <h2>XXXTentacion</h2>
+        <img src="images/xxxtentacion.jpg" alt="XXXTentacion">
+        <h3>Top Albums</h3>
+        <ol>
+            <li><b>17</b> - A deeply personal album dealing with depression and heartbreak.</li>
+            <li><b>? (Question Mark)</b> - A diverse album covering various genres.</li>
+            <li><b>Skins</b> - Released posthumously, showcasing his raw emotion.</li>
+        </ol>
+        <h3>Biography</h3>
+        <p>XXXTentacion, born Jahseh Dwayne Ricardo Onfroy, was a controversial and influential artist known for his emotionally raw music. He rose to fame on SoundCloud and was tragically killed in 2018 at the age of 20.</p>
+        <h3>Song Breakdown: Vice City</h3>
+        <p>"Vice City" is one of XXXTentacion's early tracks, showcasing his lyrical prowess and dark themes. The song discusses the struggles of living a life surrounded by vice and temptation.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Music Legends. All rights reserved.</p>
+    </footer>
+
+    <audio id="background-music" src="music/Nothing_Even_Matters.mp3" loop autoplay></audio>
+    <script src="scripts.js"></script>
+window.onload = function() {
+    var audio = document.getElementById('background-music');
+    audio.volume = 0.5;
+};
+</body>
+</html>
