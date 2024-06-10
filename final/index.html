@@ -1,65 +1,108 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    margin: 0 0 20px;
-}
-
-section {
-    background: #fff;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-ol {
-    padding-left: 20px;
-}
-
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-audio {
-    display: none;
-}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Legends</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            color: #222;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Music Legends</h1>
-        <p>Celebrating the work of Lauryn Hill, Kendrick Lamar, and XXXTentacion</p>
+        <nav>
+            <ul>
+                <li><a href="#lauryn-hill">Lauryn Hill</a></li>
+                <li><a href="#kendrick-lamar">Kendrick Lamar</a></li>
+                <li><a href="#xxxtentacion">XXXTentacion</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="lauryn-hill">
@@ -104,10 +147,11 @@ audio {
     </footer>
 
     <audio id="background-music" src="music/Nothing_Even_Matters.mp3" loop autoplay></audio>
-    <script src="scripts.js"></script>
-window.onload = function() {
-    var audio = document.getElementById('background-music');
-    audio.volume = 0.5;
-};
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById('background-music');
+            audio.volume = 0.5;
+        };
+    </script>
 </body>
 </html>
